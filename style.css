@@ -1,0 +1,182 @@
+/* ── Shared base ────────────────────────────────── */
+:root {
+  --page-bg: #f8f9fa;
+  --rainbow: linear-gradient(90deg,
+    #ff6b6b, #ffa94d, #ffd43b, #69db7c, #74c0fc, #b197fc, #f783ac);
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: var(--page-bg);
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+.navbar .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+/* ── Rainbow + animated polka dots (all pages) ───── */
+
+/* animated polka-dot background */
+body {
+  background-color: #fff5f7;
+  background-image:
+    radial-gradient(circle, #ffc9de 8%, transparent 8%),
+    radial-gradient(circle, #c3e8ff 8%, transparent 8%),
+    radial-gradient(circle, #d4f7c5 6%, transparent 6%),
+    radial-gradient(circle, #f3d8ff 7%, transparent 7%),
+    radial-gradient(circle, #fff0b3 6%, transparent 6%),
+    radial-gradient(circle, #ffd6a5 5%, transparent 5%);
+  background-size:
+    120px 120px,
+    160px 160px,
+    100px 100px,
+    140px 140px,
+    180px 180px,
+    130px 130px;
+  background-position:
+    10px 10px,
+    80px 60px,
+    40px 130px,
+    120px 30px,
+    60px 100px,
+    150px 80px;
+  animation: polkaDrift 12s linear infinite;
+}
+
+@keyframes polkaDrift {
+  0%   { background-position: 10px 10px, 80px 60px, 40px 130px, 120px 30px, 60px 100px, 150px 80px; }
+  50%  { background-position: 30px 50px, 60px 30px, 80px 90px,  90px 70px, 100px 60px, 120px 120px; }
+  100% { background-position: 10px 10px, 80px 60px, 40px 130px, 120px 30px, 60px 100px, 150px 80px; }
+}
+
+/* rainbow navbar */
+.navbar {
+  background: linear-gradient(90deg, #ff6b6b, #ffa94d, #ffd43b, #69db7c, #74c0fc, #b197fc, #f783ac) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* rainbow hero */
+.hero {
+  background: linear-gradient(135deg, #fff0f6 0%, #e8f7ff 50%, #f0fff4 100%);
+  border-bottom: 4px solid transparent;
+  border-image: var(--rainbow) 1;
+}
+
+.hero h1 {
+  background: var(--rainbow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* rainbow page headings */
+main h1 {
+  background: var(--rainbow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* rainbow-bordered cards */
+.card {
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff), var(--rainbow);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.1);
+}
+
+.card .btn-outline-dark {
+  background: var(--rainbow);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+
+.card .btn-outline-dark:hover {
+  filter: brightness(1.1);
+}
+
+/* rainbow buttons */
+.btn-primary {
+  background: var(--rainbow);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-outline-primary {
+  border: 2px solid #b197fc;
+  color: #b197fc;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background: #b197fc;
+  color: #fff;
+}
+
+/* rainbow footer accent */
+footer {
+  border-top: 4px solid transparent;
+  border-image: var(--rainbow) 1;
+}
+
+/* ── Gallery ────────────────────────────────────── */
+.gallery-item {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff), var(--rainbow);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.gallery-caption {
+  background: rgba(255,255,255,.85);
+  border: 1px solid rgba(0,0,0,.08);
+  font-size: 0.9rem;
+}
+
+/* lightbox dark backdrop */
+#lightbox .modal-content {
+  background: rgba(0,0,0,.85) !important;
+  border-radius: 1rem;
+}
+
+#lightbox .modal-body img {
+  max-height: 80vh;
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Portfolio Home</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		<div class="container">
+			<a class="navbar-brand fw-bold" href="index.html">My Portfolio</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="glitch-art.html">Glitch Art</a></li>
+					<li class="nav-item"><a class="nav-link" href="meme.html">Meme</a></li>
+					<li class="nav-item"><a class="nav-link" href="3d.html">3D</a></li>
+					<li class="nav-item"><a class="nav-link" href="pixel-art.html">Pixel Art</a></li>
+					<li class="nav-item"><a class="nav-link" href="logo.html">Logo</a></li>
+					<li class="nav-item"><a class="nav-link" href="net-art.html">Net Art</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header class="hero py-5 border-bottom">
+		<div class="container py-4">
+			<div class="row align-items-center g-4">
+				<div class="col-lg-7">
+					<h1 class="display-5 fw-bold">Creative Portfolio</h1>
+					<p class="lead mb-4">Explore my digital work across different styles and mediums. Use the categories below to quickly navigate to each project section.</p>
+					<a href="about.html" class="btn btn-primary btn-lg me-2">About Me</a>
+					<a href="#categories" class="btn btn-outline-primary btn-lg">Browse Categories</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="container py-5" id="categories">
+		<h2 class="h3 fw-bold mb-4">Portfolio Categories</h2>
+		<div class="row g-4">
+			<div class="col-md-6 col-xl-4">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body d-flex flex-column">
+						<h3 class="h5 card-title">Glitch Art</h3>
+						<p class="card-text">Experimental visuals created through digital distortion and intentional image errors.</p>
+						<a class="btn btn-outline-dark mt-auto" href="glitch-art.html">View Glitch Art</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xl-4">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body d-flex flex-column">
+						<h3 class="h5 card-title">Meme</h3>
+						<p class="card-text">Humor-driven visual content blending internet culture with design experimentation.</p>
+						<a class="btn btn-outline-dark mt-auto" href="meme.html">View Memes</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xl-4">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body d-flex flex-column">
+						<h3 class="h5 card-title">3D</h3>
+						<p class="card-text">Three-dimensional studies, renders, and scenes focused on form, light, and composition.</p>
+						<a class="btn btn-outline-dark mt-auto" href="3d.html">View 3D Work</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xl-4">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body d-flex flex-column">
+						<h3 class="h5 card-title">Pixel Art</h3>
+						<p class="card-text">Low-resolution illustrations crafted with limited palettes and precise pixel placement.</p>
+						<a class="btn btn-outline-dark mt-auto" href="pixel-art.html">View Pixel Art</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xl-4">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body d-flex flex-column">
+						<h3 class="h5 card-title">Logo</h3>
+						<p class="card-text">Identity marks and logo concepts designed for clarity, memorability, and adaptability.</p>
+						<a class="btn btn-outline-dark mt-auto" href="logo.html">View Logos</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xl-4">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body d-flex flex-column">
+						<h3 class="h5 card-title">Net Art</h3>
+						<p class="card-text">Web-native artistic projects that use browser interaction, code, and online aesthetics.</p>
+						<a class="btn btn-outline-dark mt-auto" href="net-art.html">View Net Art</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="bg-dark text-white py-4 mt-5">
+		<div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+			<span>© 2026 My Portfolio</span>
+			<a class="text-white text-decoration-none" href="about.html">Learn more about the artist</a>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
